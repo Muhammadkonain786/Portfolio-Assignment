@@ -25,6 +25,7 @@ padding: 0px;}
     margin-right: 5px;
     font-size: 20px;
     font-weight: 600px;
+    float: left;
 }
 ul>button{
     padding: 10px 30px;
@@ -44,6 +45,10 @@ ul>li:hover{
     color: white;
     cursor: pointer;
 }
+#list>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
 body{ background-color:rgb(240, 228, 252) ;}
 #d1{
     width: 100%;
@@ -52,7 +57,8 @@ body{ background-color:rgb(240, 228, 252) ;}
     display: inline-block;
 }
 #box1{
-    width: 40%;
+    width: 100%;
+    max-width: 40%;
     height: 550px;
     /* border: 2px solid black; */
     margin: 20px;
@@ -61,12 +67,12 @@ body{ background-color:rgb(240, 228, 252) ;}
     margin-top: 50px;
 }
 #box2{
-    width: 500px;
+    width: 30%;
     height: 550px;
     /* border: 2px solid black; */
     margin: 20px;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: rgba(245, 241, 241, 0.904);
 border-style: none;    
 border-width: none;
@@ -287,4 +293,40 @@ border: none;
     background-color: rgb(255, 255, 255);
     border-color: rgb(169, 110, 224);
 
+}
+#footer{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    background-color: rgb(107, 107, 231);
+    border-color: rgb(107, 107, 231);
+}
+#footerlist>ul{
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#footerlist>ul>li{
+    float: right;
+    display: inline-block;
+    padding: 14px 16px;
+    color: aliceblue;
+}
+#footerlist{
+    margin-right: 480px;
+    margin-top: 120px;
+}
+#footer>p{
+    float: right;
+    margin-right: 20px;
+}
+#footer>h3{ 
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+#footerlist>li>a{
+    text-decoration: none;
+    color: gray;
 }
